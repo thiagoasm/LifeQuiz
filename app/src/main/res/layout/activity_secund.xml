@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+
+    >
+
+    <TextView
+        android:id="@+id/pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="No filme 'piratas do caribe',Como o personagem interpretado por Johnny Depp, faz questão de ser chamado ?"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/opcao_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="opcaoA"
+                android:padding="20dp"
+                android:text="Barba Branca\n"
+
+                />
+
+            <Button
+                android:id="@+id/opcao_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="opcaoC"
+                android:padding="20dp"
+                android:text="Barbosa\n" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+
+            <Button
+                android:id="@+id/opcao_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="opcaoB"
+                android:padding="20dp"
+                android:text="Capitão Jack Sparrow"
+
+                />
+
+            <Button
+                android:id="@+id/opcao_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="opcaoD"
+                android:padding="20dp"
+                android:text="Jack Sparrow\n" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
