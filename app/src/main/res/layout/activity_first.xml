@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text=" Qual é um termo que designa um espetáculo de humor executado por apenas um comediante, que se apresenta geralmente em pé, sem acessórios, cenários, caracterização, personagem ou o recurso teatral.?"
+        android:text="Qual dos alimentos é mais calorico? "
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp"
 
@@ -21,9 +20,9 @@
 
 
     <LinearLayout
+        android:layout_marginTop="350dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -40,7 +39,7 @@
                 android:layout_gravity="center_horizontal"
                 android:onClick="opcaoA"
                 android:padding="20dp"
-                android:text="Comedia\n"
+                android:text="Refrigerante\n"
 
                 />
 
@@ -51,7 +50,7 @@
                 android:layout_gravity="center_horizontal"
                 android:onClick="opcaoC"
                 android:padding="20dp"
-                android:text="Up Comedy\n" />
+                android:text="Bebidas Alcoólicas\n" />
 
 
         </LinearLayout>
@@ -66,6 +65,7 @@
             >
 
 
+
             <Button
                 android:id="@+id/opcao_b"
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 android:layout_gravity="center_horizontal"
                 android:onClick="opcaoB"
                 android:padding="20dp"
-                android:text="Comediação\n"
+                android:text="Doces\n"
 
                 />
 
@@ -84,7 +84,7 @@
                 android:layout_gravity="center_horizontal"
                 android:onClick="opcaoD"
                 android:padding="20dp"
-                android:text="Stand Up \n" />
+                android:text="Sorvete\n" />
 
 
         </LinearLayout>
@@ -93,3 +93,4 @@
 
 
 </RelativeLayout>
+

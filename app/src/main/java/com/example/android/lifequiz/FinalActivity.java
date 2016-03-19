@@ -3,6 +3,7 @@ package com.example.android.lifequiz;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -24,9 +25,10 @@ public class FinalActivity extends AppCompatActivity {
 
     }
     public void displayPontuacao(){
-        TextView pontuacaoTextView = (TextView) findViewById(R.id.pontuacao_final);
-        pontuacaoTextView.setText(String.valueOf(pontuacao));
 
+        TextView pontuacaoTextView = (TextView) findViewById(R.id.pontuacao_final);
+        pontuacaoTextView.setText("Jogador: "+ nome+"\nPontuação: " + String.valueOf(pontuacao)
+                + "\n A os instrutores, obrigado pela força!");
 
     }
 

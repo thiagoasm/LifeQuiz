@@ -15,10 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FirstActivity" />
         <activity android:name=".SecundActivity" />
         <activity android:name=".ThirdActivity" />
-        <activity android:name=".fourthActivity" />
-        <activity android:name=".FinalActivity"></activity>
+        <activity android:name=".FourthActivity" />
+        <activity android:name=".FinalActivity" />
+
+
     </application>
 
 </manifest>

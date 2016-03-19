@@ -4,13 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
-
-import java.util.ArrayList;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    int pontuacao = 0;
-    String nome = "";
+    String nome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,44 +15,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
     }
+
+    public void iniciarQuiz(View view) {
+
+        EditText nameField = (EditText) findViewById(R.id.name_field);
+        nome = nameField.getText().toString();
+        proximaAtivity();
+    }
+
 
     public void proximaAtivity() {
-        Intent nextActivity = new Intent(this, SecundActivity.class);
-
-        nextActivity.putExtra("nome ", nome);
-        nextActivity.putExtra("pontuacao", pontuacao);
-
+        Intent nextActivity = new Intent(this, FirstActivity.class);
+        nextActivity.putExtra("nome", nome);
         startActivity(nextActivity);
     }
-
-    public void opcaoA(View view) {
-
-        pontuacao = pontuacao + 25;
-
-        proximaAtivity();
-
-    }
-
-    public void opcaoC(View view) {
-
-        proximaAtivity();
-
-
-    }
-
-    public void opcaoB(View view) {
-
-        proximaAtivity();
-
-    }
-
-    public void opcaoD(View view) {
-
-        proximaAtivity();
-
-
-    }
-
-
 }

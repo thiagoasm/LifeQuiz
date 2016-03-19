@@ -23,7 +23,7 @@ public class SecundActivity extends AppCompatActivity {
 
 
     public void proximaAtivity() {
-        Intent nextActivity = new Intent(this, FinalActivity.class);
+        Intent nextActivity = new Intent(this, ThirdActivity.class);
 
         nextActivity.putExtra("nome", nome);
         nextActivity.putExtra("pontuacao", pontuacao);
